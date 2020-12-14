@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <title>log in form</title>
+</head>
+<style>
+    body{
+        background-image: url("pic2.webp");
+        background-size: cover;
+    }
+    .input-boxes{
+        width:60%;
+        height: 25px;
+        border-radius: 8px;
+        margin-left:5%;
+    }
+    .labels{
+        font-size:20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-left:5%;
+        color:#fff;
+    }
+    form{
+    border:2px solid greenyellow;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top:5%;
+    background: rgb(79, 79, 172);
+    border-radius: 4%;
+}
+button{
+    border-radius: 35%;
+    font-size:20px;
+    background: lime;
+    margin-left: 5%;
+}
+form p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left:5%;
+    color:#fff;
+}
+#form-head{
+    display:flex;
+    flex-direction: row;
+    /*align-items: flex-end;*/
+    justify-content: space-between;
+    margin-left:5%;
+    margin-right:5%;
+}
+#form-head h3{
+    color:#fff;
+    font-family: monospace;
+    font-size:25px;
+}
+
+</style>
+
+<body>
+    <h2></h2>
+    <form>
+        <div id="form-head">
+            <div>
+                <h3>Sign up</h3>
+            </div>
+            <div>
+                <a href="#"><h3>Log in</h3></a>
+            </div>
+        </div>
+        <label for="full-name" class="labels">Full name</label><br>
+        <input type="text" placeholder="Your Full Name" id="full-name" class="input-boxes">
+        <br><br>
+        <label for="username" class="labels">Pick a username</label><br>
+        <input type="text" placeholder="add optional username" id="username"class="input-boxes">
+        <br><br>
+        <label for="password"class="labels">Make a password</label><br>
+        <input type="password" placeholder="password" id="password" class="input-boxes">
+        <br><br>
+        <label for="phone" class="labels">Enter your phone (optional)</label><br>
+        <input type="text" placeholder="Your Full Name" id="phone" class="input-boxes">
+        <br><br>
+        <label for="mail" class="labels">Enter your email(optional)</label><br>
+        <input type="email" placeholder="your email address" id="mail" class="input-boxes">
+        <br><br>
+        <button type="submit">Sign up</button>
+        <p>By clicking sign up, you are indicating that you have read and agreed to the <a href="#" onclick="terms()" id="trms">terms of service</a>
+         and <a href="privacy policy"onclick="terms()" id="trms">privacy policy</a></p>
+        <p>Standard message and data rates my apply when used via message</p>
+    </form>
+    <script>
+        function terms(){
+            alert("THIS DSC KYU WEBSITE USES COOKIES TO COLLECT BROWSING DATA, NO PERSONAL DATA IS FETCHED BY THIS PAGE WHICH INCLUDES PASSWORDS.");
+        }
+    </script>
+</body>
